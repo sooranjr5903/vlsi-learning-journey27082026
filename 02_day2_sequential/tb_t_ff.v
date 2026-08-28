@@ -29,17 +29,17 @@ module tb_t_ff;
         // Apply reset
         rst_n = 0;
         t = 0;
-        #12;
+        #15;
 
         // Release reset
         rst_n = 1;
         #10;
 
         // Apply different data values
-        t = 1; #10;
-        t = 0; #10;
-        t = 1; #10;
-        t = 1; #10;
+        t = 1; #20;
+        t = 0; #20;
+        t = 1; #20;
+        t = 1; #20;
         t = 0; #20;
 
         $display("T Flip-Flop simulation finished");
